@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/itemListFragment">
+
+    <fragment
+        android:id="@+id/itemInsertFragment"
+        android:name="com.example.databaseroom2.allfragments.ItemInsertFragment"
+        android:label="ItemInsertFragment" />
+    <fragment
+        android:id="@+id/itemDeleteFragment"
+        android:name="com.example.databaseroom2.allfragments.ItemDeleteFragment"
+        android:label="fragment_item_delete"
+        tools:layout="@layout/fragment_item_delete" />
+    <fragment
+        android:id="@+id/itemListFragment"
+        android:name="com.example.databaseroom2.allfragments.ItemLIstFragment"
+        android:label="fragment_item_list"
+        tools:layout="@layout/fragment_item_l_ist" />
+</navigation>

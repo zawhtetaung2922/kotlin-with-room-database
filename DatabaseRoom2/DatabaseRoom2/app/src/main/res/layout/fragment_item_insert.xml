@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#42837D"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+    tools:context=".ItemInsertFragment">
+    <!-- Title for the Fragment -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_secondary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Item Insert Fragment" />
+
+    <TextView
+        android:id="@+id/insert_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
+        android:text="Insert New Item"
+        android:textColor="#0D0C0C"
+        android:textSize="24sp" />
+
+    <!-- Item Name Input -->
+    <EditText
+        android:id="@+id/et_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Item Name"
+        android:inputType="text"
+        android:singleLine="false"
+        android:textColor="@color/black"
+        android:textColorHint="#101010"
+        android:textSize="20sp" />
+
+    <!-- Item Price Input -->
+    <EditText
+        android:id="@+id/et_item_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Item Price"
+        android:inputType="numberDecimal"
+        android:textColorHint="#141414"
+        android:textSize="20sp" />
+
+    <!-- Item Quantity Input -->
+    <EditText
+        android:id="@+id/et_item_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Item Quantity"
+        android:inputType="number"
+        android:textColorHint="#1A1919"
+        android:textSize="20sp" />
+
+    <!-- Button to Insert Item -->
+    <Button
+        android:id="@+id/btn_insert_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#00ACC1"
+        android:text="Insert Item"
+        android:textColor="#100F0F"
+        android:textColorLink="#FF9800" />
+    <!-- alert insert success-->
+    <TextView
+        android:id="@+id/success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alert Message"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</LinearLayout>
